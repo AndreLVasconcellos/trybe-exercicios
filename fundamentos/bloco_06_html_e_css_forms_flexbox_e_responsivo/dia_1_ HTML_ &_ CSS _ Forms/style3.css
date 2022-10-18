@@ -1,0 +1,9 @@
+* {
+    margin: 10;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+
+  #input-foto {
+    width: 30%;
+  }

@@ -141,19 +141,20 @@ function Changecolors(event) {
     let getcenterPixels = document.querySelectorAll('.pixel');
     let positionAndColor = [];
     
-    pixelBoxs.addEventListener('click', function() {
-        let eventTargetColor = event.target.style.backgroundColor;
+    pixelBoxs.addEventListener('click', function(event) {
+           console.log(event.target);
 
-        if (selectedColor.length > 0) {
+        
             let color = selectedColor[0].style.backgroundColor;
             event.target.style.backgroundColor = color;
-        } 
+        
         
         
         for (let index = 0; index < getcenterPixels.length; index += 1) {
             positionAndColor.push(getcenterPixels[index].style.backgroundColor);    
         }
-        
+        console.log(positionAndColor);
+        console.log(JSON.stringify(positionAndColor));
         localStorage.setItem('pixelBoard', JSON.stringify(positionAndColor));
         positionAndColor = [];
     });
@@ -184,12 +185,12 @@ function clearBoard() {
  
     getbuttonClearBoard.addEventListener('click', function() {
      for (let index = 0; index < getcenterPixels.length; index += 1) {
-         let newBackgroundColor = 'white'
+         let newBackgroundColor = "rgb(255, 255, 255)"
          if (getcenterPixels[index].style.backgroundColor !== newBackgroundColor);
          getcenterPixels[index].style.backgroundColor = newBackgroundColor;
         
      }
-    localStorage.setItem('pixelBoard', 'white');
+    localStorage.setItem('pixelBoard', 1);
     });
 }
 

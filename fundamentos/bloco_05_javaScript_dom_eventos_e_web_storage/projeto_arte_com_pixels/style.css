@@ -1,5 +1,5 @@
 #color-palette {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     height: 40px;
     width: 180px;
 }
@@ -48,10 +48,10 @@
 }
 
 #pixel-board {
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin-top: 5px;
-    height: 210px;
-    width: 210px;   
+    height: 200px;
+    width: 210px;
 }
 
 .pixel {
@@ -59,8 +59,7 @@
     height: 40px;
     width: 40px;
     display: inline-block;
-    /* background-color: white; */
-    
-    
+    margin-top: -4px;
+    /* background-color: white; */     
 }
 
