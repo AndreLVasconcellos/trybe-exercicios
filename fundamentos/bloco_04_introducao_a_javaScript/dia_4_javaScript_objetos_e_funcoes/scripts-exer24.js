@@ -10,22 +10,28 @@ for (let index = 0; index < params.length; index += 1) {
     return 'não é possível gerar um número de telefone com esses valores'
 }
 
-for (let index1 in params) {
+for (let index1 = 0; index1 < params.length; index1 += 1) {
     let verificaNumero = params[index1];
-    for (let index3 in params) {
-        if (verificaNumero === params[index3]) {
+    for (let index2 = 0; index2 < params.length; index2 += 1) {
+        if (verificaNumero === params[index2]) {
             contador += 1;
-        } else if (contador > 3) {
+            
+}
+    }
+    if (contador > 3) {
+        return 'não é possível gerar um número de telefone com esses valores repetidos'
+        } else {
             telefone = params.join('')
             return telefone.replace(/(\d{2})?(\d{5})?(\d{4})?/, "($1) $2-$3")
+    
         }
 
-    }
-}
-    
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+}
+
+
+console.log(generatePhoneNumber([1, 1, 1, 4, 1, 6, 7, 8, 9, 0, 1]));
 console.log(generatePhoneNumber([11, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 3]));
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, -9, 0, 1]));
