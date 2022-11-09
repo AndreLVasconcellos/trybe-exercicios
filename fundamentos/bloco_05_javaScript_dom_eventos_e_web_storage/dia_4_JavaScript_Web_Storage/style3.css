@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+
+
+.color-box {
+    border: solid 1px black;
+    height: 40px;
+    width: 40px;
+    display: inline-flexbox
+  
+    
+}
