@@ -72,8 +72,3 @@ const verifyPair = (obj, key, value) => {
 console.log(verifyPair(lesson2,'professor','Carlos'));
 
 console.log(createReport(allLessons, 'Maria Clara'));
-/* {
-  professor: 'Maria Clara',
-  aulas: [ 'Matemática', 'Matemática' ],
-  estudantes: 30
-} */
