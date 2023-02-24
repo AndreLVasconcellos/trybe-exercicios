@@ -1,0 +1,16 @@
+.App {
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+  Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  display: flex;
+}
+
+.image {
+  max-width: 250px;
+  margin: 10px;
+  border: 6px gray solid;
+  padding: 5px;
+  border-radius: 50%;
+}
