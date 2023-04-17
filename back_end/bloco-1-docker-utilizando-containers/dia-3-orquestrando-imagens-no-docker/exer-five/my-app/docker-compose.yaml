@@ -1,0 +1,8 @@
+  version: '3'
+
+  services:
+
+    frontend:
+      build: /home/andre/Documentos/portifolio_de_exercicios/trybe-exercicios/back_end/bloco-1-docker-utilizando-containers/dia-3-orquestrando-imagens-no-docker/exer-five/my-app
+      ports:
+        - 8080:3001
