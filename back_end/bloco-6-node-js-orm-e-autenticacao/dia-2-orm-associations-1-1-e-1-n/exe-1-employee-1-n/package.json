@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "4.17.1",
+    "mysql2": "2.1.0",
+    "nodemon": "2.0.15",
+    "sequelize": "6.3.4"
+  },
+  "name": "exe-1",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha ./tests/**/*$NAME*.test.js --exit",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "chai-http": "4.3.0",
+    "mocha": "10.0.0",
+    "sequelize-cli": "6.2.0",
+    "sinon": "14.0.0"
+  }
+}
