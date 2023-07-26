@@ -26,6 +26,16 @@ class Stack:
         value = self._data[-1]
         return value
 
+    def min_value(self):
+        if self.is_empty():
+            return None
+
+        min_value = self._data[0]
+        for elem in self._data:
+            if elem < min_value:
+                min_value = elem
+        return min_value
+
     def clear(self):
         self._data.clear()
 
@@ -46,6 +56,13 @@ if __name__ == "__main__":
 
     for elem in elements:
         content_stack.push(elem)
+
+        # saída: 1
+    print(content_stack.min_value())
+    content_stack.push(-5)
+    # saída: -5
+    print(content_stack.min_value())
+    print(content_stack.pop())
 
     # saída: Stack(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     print(content_stack)
